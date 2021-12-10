@@ -1,0 +1,29 @@
+<div class="calculadora">
+  <app-linha>
+    <app-visor [text]="showVisor"></app-visor>
+  </app-linha>
+  <app-linha>
+    <app-botao [value]="'1'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'2'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'3'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'+'" (onClick)="addCharacter($event)"></app-botao>
+  </app-linha>
+  <app-linha>
+    <app-botao [value]="'4'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'5'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'6'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'-'" (onClick)="addCharacter($event)"></app-botao>
+  </app-linha>
+  <app-linha>
+    <app-botao [value]="'7'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'8'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'9'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'*'" (onClick)="addCharacter($event)"></app-botao>
+  </app-linha>
+  <app-linha>
+    <app-botao [value]="'0'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'.'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'/'" (onClick)="addCharacter($event)"></app-botao>
+    <app-botao [value]="'='" (onClick)="executeCalc()"></app-botao>
+  </app-linha>
+</div>
